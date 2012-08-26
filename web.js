@@ -24,3 +24,14 @@ app.get('/va/stories', function(req, res){
 	res.send(storyJSON);
 
 });
+
+app.get('/va/stories/:story_id', function(req, res){
+	var story = new Object();
+	story.Id = req.params.story_id;
+	story.name = "Add a method for a specific story";
+	story.devLoe = "4"
+	var storyJSON = JSON.stringify(story);
+
+	res.send(storyJSON);
+
+});
