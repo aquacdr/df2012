@@ -21,6 +21,6 @@ app.get('/va/stories', function(req, res){
 	story.devLoe = "4"
 	var storyJSON = JSON.stringify(story);
 
-	response.send('test');
+	res.send('test');
 
 });
