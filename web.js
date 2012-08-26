@@ -13,3 +13,13 @@ app.listen(port, function(){
 
 });
 
+// gets all stories
+app.get('/va/stories', function(req, res){
+	var story = new Object();
+	story.Id = "1234";
+	story.name = "Add a js method for story";
+	story.devLoe = "4"
+	var storyJSON = JSON.stringify(story);
+	response.send(storyJSON);
+
+});
