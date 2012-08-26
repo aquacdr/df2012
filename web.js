@@ -20,6 +20,7 @@ app.get('/va/stories', function(req, res){
 	story.name = "Add a js method for story";
 	story.devLoe = "4"
 	var storyJSON = JSON.stringify(story);
-	response.send(storyJSON);
+
+	response.send('test');
 
 });
